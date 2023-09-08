@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract W3ArabsProject is ERC721Enumerable, Ownable {
+contract W3ArabsNFT is ERC721Enumerable, Ownable {
     // parameters إلى سلاسل عند تمريرها كمعلمات uint256 يشير إلى أنه سيتم تحويل قيم
     using Strings for uint256;
 
@@ -22,7 +22,7 @@ contract W3ArabsProject is ERC721Enumerable, Ownable {
     * لتحديد اسم ورمز لمشروعنا ERC721 يُستخدم
     * _tokenURI الخاص بمشروعنا في المتغير baseURI يتم تمرير
     */
-    constructor (string memory baseURI) ERC721("W3ArabsProject", "W3AP") {
+    constructor (string memory baseURI) ERC721("W3ArabsNFT", "W3AN") {
         _tokenURI = baseURI;
     }
 

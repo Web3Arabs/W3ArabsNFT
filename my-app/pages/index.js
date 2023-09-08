@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import { ethers } from "ethers"
-import abi from "../utils/W3ArabsProject.json"
+import abi from "../../contract-tutorial/artifacts/contracts/W3ArabsNFT.sol/W3ArabsNFT.json"
 
 export default function Home() {
   // Contract Address & ABI
-  const contractAddress = "0x338c0a9e4B43eA99357e493eA5F389193a85E384"
+  const contractAddress = "0x72D0850fd8F1c0e271280A2EFDAde74e1cAA0CCE"
   const contractABI = abi.abi
 
   // ستقوم بتخزين عنوان المحفظة التي ستتصل بالتطبيق من اجل مراقبة ما اذا كانت المحفظة متصلة بالتطبيق او نتمكن من استدعاء عنوان المحفظة المتصلة
