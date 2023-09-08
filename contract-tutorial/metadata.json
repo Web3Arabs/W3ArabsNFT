@@ -1,0 +1,20 @@
+{
+    "description": "This NFT I've deployed an ERC721 Smart Contract",
+    "external_url": "https://web3arabs.com",
+    "image": "https://copper-colonial-lamprey-141.mypinata.cloud/ipfs/QmSsYRx3LpDAb1GZQm7zZ1AuHZjfbPkD6J7s9r41xu1mf8",
+    "name": "ERC721 PUG",
+    "attributes": [
+        {
+            "trait_type": "Coolness",
+            "value": "A lot"
+        },
+        {
+            "trait_type": "W3A",
+            "value": "web3arabs.com"
+        },
+        {
+            "trait_type": "Token",
+            "value": "ERC721"
+        }
+    ]
+}

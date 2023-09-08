@@ -4,10 +4,12 @@ async function main() {
   /**
     لنشر عقود ذكية جديدة getContractFactory يستخدم
   */
-  const w3arabsContract = await hre.ethers.getContractFactory("W3ArabsProject");
+  const w3arabsContract = await hre.ethers.getContractFactory("W3ArabsNFT");
 
-  // Filebase البيانات الوصفية التي قمنا برفعها على URI هنا نقوم برفع العقد وندخل
-  const w3arabs = await w3arabsContract.deploy("https://ipfs.filebase.io/ipfs/add_your_ipfs_cid");
+  // Pinata التي قمنا برفعها على metadata البيانات الوصفية CID هنا نقوم برفع العقد وندخل
+  const w3arabs = await w3arabsContract.deploy(
+    "https://copper-colonial-lamprey-141.mypinata.cloud/ipfs/QmXMopr62DB3AHrT2McJnjd6GwNB1ufqv1N"
+  );
 
   // انتظر حتى تنتهي عملية الرفع
   await w3arabs.deployed();
